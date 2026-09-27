@@ -44,7 +44,7 @@ Como se puede ver, la tabla `more_table` tiene una columna `flag`, así que real
 ```
 ![flag](./imagenes/flag.png)
 
-Finalmente obteniendo la flag del reto: `picoCTF{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_3b0fca37}`
+Finalmente obteniendo la flag del reto: `academy{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_63cbcebc}`
 
 ## Script
 El [script](./main.py) realizado realiza una primera inyección al login, obteniendo una sesión, y luego una segunda inyección para obtener la flag.

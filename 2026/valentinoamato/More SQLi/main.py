@@ -34,7 +34,7 @@ response = session.post(
         }
 )
 
-match = re.search(r"picoCTF\{[^}]+\}", response.text)
+match = re.search(r"academy\{[^}]+\}", response.text)
 
 if match:
     print(f"Found flag: {match.group(0)}")
