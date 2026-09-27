@@ -5,9 +5,11 @@ Para comenzar el reto, creamos una nueva instancia del mismo, desde la página d
 ![instance](./imagenes/instance.png)
 
 Una vez creada la instancia nos dirigimos a la página del reto, donde nos encontramos con un formulario de login.
+
 ![login](./imagenes/login.png)
 
 Si probamos iniciar sesión, la página nos muestra la consulta SQL realizada. Si intentamos realizar una inyección en el parámetro de usuario obtenemos lo siguiente.
+
 ![login1](./imagenes/login1.png)
 
 Como podemos ver por más de que la inyección sea exitosa, como se evalúa primero la contraseña, el `OR` que inyectamos no logra hacer verdadera la sentencia `WHERE`.

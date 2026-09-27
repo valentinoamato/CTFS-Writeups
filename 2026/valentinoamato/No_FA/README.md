@@ -4,7 +4,7 @@
 Para comenzar el reto, creamos una nueva instancia del mismo, desde la página de [CyLab](https://learn.cylabacademy.org/library/765).
 ![instance](./imagenes/instance.png)
 
-Al crear la instancia, se nos brinda el código que usa el servidor, [app.py](./server.py), y informacion "filtrada", [users.db](./users.db).
+Al crear la instancia, se nos brinda el código que usa el servidor, [app.py](./app.py), y informacion "filtrada", [users.db](./users.db).
 
 Si inspeccionamos `users.db`, encontramos una tabla `users`.
 
@@ -33,7 +33,7 @@ Ahora la página nos solicita el código OTP.
 
 Si analizamos la [aplicacion](./app.py), podemos notar que no hay ningún tipo de rate limit. Por lo que utilizaremos un ataque de fuerza bruta para obtener el OTP.
 
-Sabiendo que el OTP es un número entre 1000 y 9999 ([app.py](./app.py:41)), creamos un script que realice un ataque de fuerza bruta probando distintos valores de OTP hasta encontrar el correcto.
+Sabiendo que el OTP es un número entre 1000 y 9999 ([app.py](./app.py#L41)), creamos un script que realice un ataque de fuerza bruta probando distintos valores de OTP hasta encontrar el correcto.
 
 El [script](./main.py) consta de un conjunto de workers que colaboran para probar los distintos posibles OTPs. Si alguno lo encuentra, o se acaba el tiempo (120 segundos), todos los workers terminan.
 
